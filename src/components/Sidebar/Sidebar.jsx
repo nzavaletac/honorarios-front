@@ -1,7 +1,7 @@
 import { Container, Lista, Span, Subtitle } from "./SidebarElements";
 import { FaUsers, FaKey } from "react-icons/fa";
 import { RiMoneyDollarBoxFill, RiLogoutBoxRFill } from "react-icons/ri";
-import { AiFillSetting, AiOutlineArrowRight } from "react-icons/ai";
+import { AiFillSetting } from "react-icons/ai";
 
 export const Sidebar = () => {
   return (

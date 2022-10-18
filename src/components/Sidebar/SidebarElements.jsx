@@ -4,7 +4,7 @@ export const Container = styled.div`
   color: #fafafa;
   background-color: #2d2e2e;
   height: calc(100vh - 100px);
-  width: 15%;
+  width: 20%;
   display: flex;
   flex-direction: column;
 `;
@@ -13,7 +13,6 @@ export const Lista = styled.li`
   color: #fafafa;
   padding: 25px;
   background-color: #2d2e2e;
-  /* justify-content: center; */
   display: flex;
   &:hover {
     background-color: #fafafa;
