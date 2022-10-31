@@ -1,4 +1,10 @@
-import { Container, Lista, Span, Subtitle } from "./SidebarElements";
+import {
+  Container,
+  UnOrderList,
+  Lista,
+  Span,
+  Subtitle,
+} from "./SidebarElements";
 import { FaUsers, FaKey } from "react-icons/fa";
 import { RiMoneyDollarBoxFill, RiLogoutBoxRFill } from "react-icons/ri";
 import { AiFillSetting } from "react-icons/ai";
@@ -6,7 +12,7 @@ import { AiFillSetting } from "react-icons/ai";
 export const Sidebar = () => {
   return (
     <Container>
-      <ul>
+      <UnOrderList>
         <Lista>
           <Span>
             <FaUsers size="30px" />
@@ -38,7 +44,7 @@ export const Sidebar = () => {
           </Span>
           <Subtitle>Salir</Subtitle>
         </Lista>
-      </ul>
+      </UnOrderList>
     </Container>
   );
 };

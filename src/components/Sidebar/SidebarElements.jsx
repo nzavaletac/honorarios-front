@@ -9,11 +9,17 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
+export const UnOrderList = styled.ul`
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+`;
+
 export const Lista = styled.li`
   color: #fafafa;
   padding: 25px;
   background-color: #2d2e2e;
   display: flex;
+  width: 100%;
   &:hover {
     background-color: #fafafa;
     cursor: pointer;

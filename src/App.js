@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import { LoginPage } from "./pages/LoginPage.jsx";
 import { HonorariosPage } from "./pages/HonorariosPage";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   // function PrivateRoute({ children }) {
