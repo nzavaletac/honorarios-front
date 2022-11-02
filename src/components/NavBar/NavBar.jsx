@@ -9,7 +9,7 @@ export const NavBar = () => {
         <Logo src={logo} />
       </Link>
       <NavBtn>
-        <NavBtnLink to="/honorarios">¡Hola! Cielo</NavBtnLink>
+        <NavBtnLink to="/">¡Hola! Cielo</NavBtnLink>
       </NavBtn>
     </Header>
   );

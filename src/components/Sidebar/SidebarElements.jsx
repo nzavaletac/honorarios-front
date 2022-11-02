@@ -1,10 +1,11 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
   color: #fafafa;
   background-color: #2d2e2e;
   height: calc(100vh - 100px);
-  width: 20%;
+  width: 15%;
   display: flex;
   flex-direction: column;
 `;
@@ -36,4 +37,13 @@ export const Span = styled.span`
 
 export const Subtitle = styled.p`
   margin: 0px 0px 0px 0px;
+`;
+
+export const NavLinks = styled(NavLink)`
+  text-decoration: none;
+  &.active {
+    background-color: red;
+    cursor: pointer;
+    color: #2d2e2e;
+  }
 `;
