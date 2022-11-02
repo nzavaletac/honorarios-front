@@ -16,7 +16,7 @@ export const UnOrderList = styled.ul`
 
 export const Lista = styled.li`
   color: #fafafa;
-  padding: 25px;
+  padding: 20px;
   background-color: #2d2e2e;
   display: flex;
   width: 100%;
@@ -29,8 +29,11 @@ export const Lista = styled.li`
 
 export const Span = styled.span`
   margin-right: 15px;
+  @media (max-width: 920px) {
+    display: none;
+  }
 `;
 
 export const Subtitle = styled.p`
-  margin-right: 15px;
+  margin: 0px 0px 0px 0px;
 `;
