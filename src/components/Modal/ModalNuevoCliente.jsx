@@ -6,7 +6,9 @@ export const ModalNuevoCliente = ({ show, handleClose }) => {
     <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title className="text-center">Add New Post</Modal.Title>
+          <Modal.Title className="text-center">
+            Agregar Nuevo Cliente
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <FormCliente />
