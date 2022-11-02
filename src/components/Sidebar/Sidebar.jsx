@@ -4,6 +4,7 @@ import {
   Lista,
   Span,
   Subtitle,
+  NavLinks,
 } from "./SidebarElements";
 import { FaUsers, FaKey } from "react-icons/fa";
 import { RiMoneyDollarBoxFill, RiLogoutBoxRFill } from "react-icons/ri";
@@ -13,24 +14,30 @@ export const Sidebar = () => {
   return (
     <Container>
       <UnOrderList>
-        <Lista>
-          <Span>
-            <FaUsers size="30px" />
-          </Span>
-          <Subtitle>Clientes</Subtitle>
-        </Lista>
-        <Lista>
-          <Span>
-            <FaKey size="30px" />
-          </Span>
-          <Subtitle> Clave Sol</Subtitle>
-        </Lista>
-        <Lista>
-          <Span>
-            <RiMoneyDollarBoxFill size="35px" />
-          </Span>
-          <Subtitle>Honorarios</Subtitle>
-        </Lista>
+        <NavLinks to="/admin/clientes" active>
+          <Lista>
+            <Span>
+              <FaUsers size="30px" />
+            </Span>
+            <Subtitle>Clientes</Subtitle>
+          </Lista>
+        </NavLinks>
+        <NavLinks to="/admin/clave" active>
+          <Lista>
+            <Span>
+              <FaKey size="30px" />
+            </Span>
+            <Subtitle> Clave Sol</Subtitle>
+          </Lista>
+        </NavLinks>
+        <NavLinks to="/admin/honorarios" active>
+          <Lista>
+            <Span>
+              <RiMoneyDollarBoxFill size="35px" />
+            </Span>
+            <Subtitle>Honorarios</Subtitle>
+          </Lista>
+        </NavLinks>
         <hr />
         <Lista>
           <Span>
