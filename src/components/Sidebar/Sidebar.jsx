@@ -14,7 +14,7 @@ export const Sidebar = () => {
   return (
     <Container>
       <UnOrderList>
-        <NavLinks to="/admin/clientes" active>
+        <NavLinks to="/admin/clientes" active="true">
           <Lista>
             <Span>
               <FaUsers size="30px" />
@@ -22,7 +22,7 @@ export const Sidebar = () => {
             <Subtitle>Clientes</Subtitle>
           </Lista>
         </NavLinks>
-        <NavLinks to="/admin/clave" active>
+        <NavLinks to="/admin/clave" active="true">
           <Lista>
             <Span>
               <FaKey size="30px" />
@@ -30,7 +30,7 @@ export const Sidebar = () => {
             <Subtitle> Clave Sol</Subtitle>
           </Lista>
         </NavLinks>
-        <NavLinks to="/admin/honorarios" active>
+        <NavLinks to="/admin/honorarios" active="true">
           <Lista>
             <Span>
               <RiMoneyDollarBoxFill size="35px" />

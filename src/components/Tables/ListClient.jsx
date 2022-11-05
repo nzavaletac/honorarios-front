@@ -1,28 +1,49 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
-import Data from "./data.json";
-
+import axios from "axios";
 export const ListClient = () => {
-  const [first, setFirst] = useState(0);
+  const [cliente, setCliente] = useState([]);
+
+  useEffect(() => {
+    axios({
+      method: "GET",
+      baseURL: "http://localhost:8000",
+      url: "/clientes",
+    }).then(({ data }) => setCliente(data.clientes));
+  }, [cliente]);
 
   return (
     <>
       <div>
         <DataTable
-          value={Data.data}
+          value={cliente}
           paginator
           rows={10}
           responsiveLayout="scroll"
-          first={first}
-          onPage={(e) => setFirst(e.first)}
-          style={{}}
         >
           <Column
-            field="code"
+            field="ruc"
             header="Code"
             style={{
-              width: "200px",
+              minWidth: "100px",
+              width: "auto",
+              height: "50px",
+              padding: "5px",
+              borderBottom: "1px solid gray",
+              textAlign: "center",
+            }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+            }}
+          ></Column>
+          <Column
+            field="nombre"
+            header="Nombres y Apellidos o Razon Social"
+            style={{
+              minWidth: "100px",
+              width: "auto",
               height: "50px",
               borderBottom: "1px solid gray",
               textAlign: "center",
@@ -30,10 +51,11 @@ export const ListClient = () => {
             headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
           ></Column>
           <Column
-            field="name"
-            header="Name"
+            field="direccion"
+            header="Direccion"
             style={{
-              width: "200px",
+              minWidth: "100px",
+              width: "auto",
               height: "50px",
               borderBottom: "1px solid gray",
               textAlign: "center",
@@ -41,10 +63,11 @@ export const ListClient = () => {
             headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
           ></Column>
           <Column
-            field="category"
-            header="Category"
+            field="regimen"
+            header="Régimen Tributario"
             style={{
-              width: "200px",
+              minWidth: "100px",
+              width: "auto",
               height: "50px",
               borderBottom: "1px solid gray",
               textAlign: "center",
@@ -52,10 +75,35 @@ export const ListClient = () => {
             headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
           ></Column>
           <Column
-            field="quantity"
-            header="Quantity"
+            field="email"
+            header="Correo"
             style={{
-              width: "200px",
+              minWidth: "100px",
+              width: "auto",
+              height: "50px",
+              borderBottom: "1px solid gray",
+              textAlign: "center",
+            }}
+            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+          ></Column>
+          <Column
+            field="telefono"
+            header="Teléfono"
+            style={{
+              minWidth: "100px",
+              width: "auto",
+              height: "50px",
+              borderBottom: "1px solid gray",
+              textAlign: "center",
+            }}
+            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+          ></Column>
+          <Column
+            field="estado"
+            header="Estado"
+            style={{
+              minWidth: "100px",
+              width: "auto",
               height: "50px",
               borderBottom: "1px solid gray",
               textAlign: "center",
