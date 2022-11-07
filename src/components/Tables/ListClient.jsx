@@ -11,7 +11,7 @@ export const ListClient = () => {
       baseURL: "http://localhost:8000",
       url: "/clientes",
     }).then(({ data }) => setCliente(data.clientes));
-  }, [cliente]);
+  }, []);
 
   return (
     <>
@@ -24,7 +24,7 @@ export const ListClient = () => {
         >
           <Column
             field="ruc"
-            header="Code"
+            header="Ruc"
             style={{
               minWidth: "100px",
               width: "auto",
