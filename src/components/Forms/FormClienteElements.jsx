@@ -21,6 +21,6 @@ export const Form = styled.form`
 
 export const ButtonSubmit = styled.button`
   border-radius: 50px;
-  background-color: #0071e3;
+  background-color: #2d2e2e;
   color: #fff;
 `;
