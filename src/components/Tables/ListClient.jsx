@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import axios from "axios";
+
 export const ListClient = () => {
   const [cliente, setCliente] = useState([]);
 
@@ -30,12 +31,15 @@ export const ListClient = () => {
               width: "auto",
               height: "50px",
               padding: "5px",
-              borderBottom: "1px solid gray",
+              border: "1px solid gray",
               textAlign: "center",
+              fontSize: "14px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
               textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
             }}
           ></Column>
           <Column
@@ -45,22 +49,36 @@ export const ListClient = () => {
               minWidth: "100px",
               width: "auto",
               height: "50px",
-              borderBottom: "1px solid gray",
+              padding: "5px",
+              border: "1px solid gray",
               textAlign: "center",
+              fontSize: "14px",
             }}
-            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
           ></Column>
           <Column
-            field="direccion"
-            header="Direccion"
+            field="planilla"
+            header="Planilla"
             style={{
               minWidth: "100px",
               width: "auto",
               height: "50px",
-              borderBottom: "1px solid gray",
+              padding: "5px",
+              border: "1px solid gray",
               textAlign: "center",
+              fontSize: "14px",
             }}
-            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
           ></Column>
           <Column
             field="regimen"
@@ -69,10 +87,17 @@ export const ListClient = () => {
               minWidth: "100px",
               width: "auto",
               height: "50px",
-              borderBottom: "1px solid gray",
+              padding: "5px",
+              border: "1px solid gray",
               textAlign: "center",
+              fontSize: "14px",
             }}
-            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
           ></Column>
           <Column
             field="email"
@@ -81,10 +106,17 @@ export const ListClient = () => {
               minWidth: "100px",
               width: "auto",
               height: "50px",
-              borderBottom: "1px solid gray",
+              padding: "5px",
+              border: "1px solid gray",
               textAlign: "center",
+              fontSize: "14px",
             }}
-            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
           ></Column>
           <Column
             field="telefono"
@@ -93,10 +125,17 @@ export const ListClient = () => {
               minWidth: "100px",
               width: "auto",
               height: "50px",
-              borderBottom: "1px solid gray",
+              padding: "5px",
+              border: "1px solid gray",
               textAlign: "center",
+              fontSize: "14px",
             }}
-            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
           ></Column>
           <Column
             field="estado"
@@ -105,10 +144,55 @@ export const ListClient = () => {
               minWidth: "100px",
               width: "auto",
               height: "50px",
-              borderBottom: "1px solid gray",
+              padding: "5px",
+              border: "1px solid gray",
               textAlign: "center",
+              fontSize: "14px",
             }}
-            headerStyle={{ backgroundColor: "GrayText", textAlign: "center" }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
+          ></Column>
+          <Column
+            field="responsable"
+            header="Responsable"
+            style={{
+              minWidth: "100px",
+              width: "auto",
+              height: "50px",
+              padding: "5px",
+              border: "1px solid gray",
+              textAlign: "center",
+              fontSize: "14px",
+            }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
+          ></Column>
+          <Column
+            field="honorarios"
+            header="Honorarios"
+            style={{
+              minWidth: "100px",
+              width: "auto",
+              height: "50px",
+              padding: "5px",
+              border: "1px solid gray",
+              textAlign: "center",
+              fontSize: "14px",
+            }}
+            headerStyle={{
+              backgroundColor: "GrayText",
+              textAlign: "center",
+              fontSize: "17px",
+              border: "1px solid white",
+            }}
           ></Column>
         </DataTable>
       </div>

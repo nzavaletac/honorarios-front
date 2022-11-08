@@ -9,7 +9,7 @@ export const NavBar = () => {
         <Logo src={logo} />
       </Link>
       <NavBtn>
-        <NavBtnLink to="/">¡Hola! Cielo</NavBtnLink>
+        <NavBtnLink to="/">Cerrar Sesión</NavBtnLink>
       </NavBtn>
     </Header>
   );

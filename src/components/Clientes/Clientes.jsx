@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, ButtonContainer, Container, Title } from "./ClientesElements";
+import { Button, Container, Title } from "./ClientesElements";
 import { MdAddCircle } from "react-icons/md";
 import { ModalNuevoCliente } from "../Modal/ModalNuevoCliente";
 import { ListClient } from "../Tables/ListClient";
@@ -14,12 +14,10 @@ export const Clientes = () => {
     <>
       <ModalNuevoCliente show={show} handleClose={handleClose} />
       <Container>
+        <Button onClick={handleShow}>
+          <MdAddCircle size="25px" /> Nuevo Cliente
+        </Button>
         <Title>Lista de Clientes</Title>
-        <ButtonContainer>
-          <Button onClick={handleShow}>
-            <MdAddCircle size="25px" /> Nuevo Cliente
-          </Button>
-        </ButtonContainer>
       </Container>
       <Container>
         <ListClient />

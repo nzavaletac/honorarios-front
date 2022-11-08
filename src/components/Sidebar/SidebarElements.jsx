@@ -10,6 +10,19 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
+export const ContainerProfile = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0px 0px 0px;
+  flex-direction: column;
+`;
+
+export const UserName = styled.p`
+  display: flex;
+  padding: 25px 0px 10px 0px;
+`;
+
 export const UnOrderList = styled.ul`
   width: 100%;
   padding: 0px 0px 0px 0px;
@@ -18,14 +31,9 @@ export const UnOrderList = styled.ul`
 export const Lista = styled.li`
   color: #fafafa;
   padding: 20px;
-  background-color: #2d2e2e;
   display: flex;
   width: 100%;
-  &:hover {
-    background-color: #fafafa;
-    cursor: pointer;
-    color: #2d2e2e;
-  }
+  cursor: pointer;
 `;
 
 export const Span = styled.span`
@@ -42,8 +50,10 @@ export const Subtitle = styled.p`
 export const NavLinks = styled(NavLink)`
   text-decoration: none;
   &.active {
-    background-color: red;
-    cursor: pointer;
-    color: #2d2e2e;
+    & li {
+      background-color: #fafafa;
+      cursor: pointer;
+      color: #2d2e2e;
+    }
   }
 `;

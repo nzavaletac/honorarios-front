@@ -1,5 +1,7 @@
 import {
   Container,
+  ContainerProfile,
+  UserName,
   UnOrderList,
   Lista,
   Span,
@@ -9,10 +11,16 @@ import {
 import { FaUsers, FaKey } from "react-icons/fa";
 import { RiMoneyDollarBoxFill, RiLogoutBoxRFill } from "react-icons/ri";
 import { AiFillSetting } from "react-icons/ai";
+import { FaUserCircle } from "react-icons/fa";
 
 export const Sidebar = () => {
   return (
     <Container>
+      <ContainerProfile>
+        <FaUserCircle size="80px" />
+        <UserName>¡Hola! Cielo</UserName>
+      </ContainerProfile>
+      <hr />
       <UnOrderList>
         <NavLinks to="/admin/clientes" active="true">
           <Lista>

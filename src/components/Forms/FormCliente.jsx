@@ -6,11 +6,13 @@ import { ButtonSubmit, Column, Container, Form } from "./FormClienteElements";
 const formVacio = {
   ruc: "",
   nombre: "",
-  direccion: "",
-  regimen: "",
+  planilla: "Seleccione si tiene planilla",
+  regimen: "Selecciona Régimen",
   email: "",
   telefono: "",
-  estado: "",
+  estado: "Selecciona Estado",
+  responsable: "",
+  honorarios: "",
 };
 
 export const FormCliente = () => {
@@ -34,26 +36,25 @@ export const FormCliente = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         createCliente(form).then((data) => {
-          //   console.log(data._id);
-          //   if (data.cliente.id) {
+          // if (data) {
           setForm(formVacio);
           Swal.fire({
             title: "Successful",
             text: "Customer created successfully",
             icon: "success",
-            // timer: 3500,
+            timer: 3500,
           });
-          //   window.location.href = "/admin/clientes";
-          //   } else {
-          //     if (data.error) {
-          //       Swal.fire({
-          //         icon: "error",
-          //         title: "Oops...",
-          //         text: "Something went wrong!",
-          //         timer: 3500,
-          //       });
-          //     }
+          window.location.href = "/admin/clientes";
+          // } else {
+          //   if (data.error) {
+          //     Swal.fire({
+          //       icon: "error",
+          //       title: "Oops...",
+          //       text: "Something went wrong!",
+          //       timer: 3500,
+          //     });
           //   }
+          // }
         });
       }
     });
@@ -88,15 +89,17 @@ export const FormCliente = () => {
             </label>
           </div>
           <div className="container">
-            <input
-              name="direccion"
-              type="text"
-              placeholder="Dirección Fiscal"
+            <select
+              name="planilla"
               className="container__input"
               onChange={handleChange}
-              value={form.direccion}
-            />
-            <label className="container__label">Dirección Fiscal</label>
+            >
+              <option value="">Seleccione si tiene planilla</option>
+              <option value="Si">Si</option>
+              <option value="No">No</option>
+              <option value="RxH">RxH</option>
+            </select>
+            <label className="container__label">Régimen Tributario</label>
           </div>
           <div className="container">
             <select
@@ -146,6 +149,30 @@ export const FormCliente = () => {
               <option value="Baja">Baja</option>
             </select>
             <label className="container__label">Estado</label>
+          </div>
+          <div className="container">
+            <select
+              name="responsable"
+              className="container__input"
+              onChange={handleChange}
+            >
+              <option value="">Selecciona Responsable</option>
+              <option value="Noe Zavaleta">Noe Zavaleta</option>
+              <option value="Eliana Velasquez">Eliana Velasquez</option>
+              <option value="Jorge Zamora">Jorge Zamora</option>
+            </select>
+            <label className="container__label">Responsable</label>
+          </div>
+          <div className="container">
+            <input
+              name="honorarios"
+              type="text"
+              placeholder="Honorarios"
+              className="container__input"
+              onChange={handleChange}
+              value={form.honorarios}
+            />
+            <label className="container__label">Honorarios</label>
           </div>
           <ButtonSubmit type="submit" className="btn mt-4 p-3">
             Registrar
