@@ -8,6 +8,6 @@ export const createCliente = async (obj) => {
       "Content-type": "application/json",
     },
   });
-  const data = await result.json();
-  console.log(data);
+
+  return await result.json();
 };
