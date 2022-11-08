@@ -10,7 +10,7 @@ export const Title = styled.p`
   font-size: 40px;
   color: #2d2e2e;
   text-align: center;
-  width: 100%;
+  width: 65%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -19,11 +19,11 @@ export const Title = styled.p`
 `;
 
 export const ButtonContainer = styled.div`
-  width: 100%;
+  width: 65%;
   display: flex;
   height: auto;
   position: absolute;
-  margin-top: 30px;
+  margin-top: 50px;
 `;
 
 export const Button = styled.button`
