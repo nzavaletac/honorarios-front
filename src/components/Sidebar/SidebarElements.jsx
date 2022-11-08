@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   color: #fafafa;
   background-color: #2d2e2e;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 0px);
   width: 15%;
   display: flex;
   flex-direction: column;
@@ -14,13 +14,13 @@ export const ContainerProfile = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 25px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   flex-direction: column;
 `;
 
 export const UserName = styled.p`
   display: flex;
-  padding: 25px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
 `;
 
 export const UnOrderList = styled.ul`

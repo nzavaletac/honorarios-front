@@ -27,13 +27,12 @@ export const ListClient = () => {
             field="ruc"
             header="Ruc"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -46,13 +45,12 @@ export const ListClient = () => {
             field="nombre"
             header="Nombres y Apellidos o Razon Social"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -65,13 +63,12 @@ export const ListClient = () => {
             field="planilla"
             header="Planilla"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -84,13 +81,12 @@ export const ListClient = () => {
             field="regimen"
             header="Régimen Tributario"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -103,13 +99,12 @@ export const ListClient = () => {
             field="email"
             header="Correo"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -122,13 +117,12 @@ export const ListClient = () => {
             field="telefono"
             header="Teléfono"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -141,13 +135,12 @@ export const ListClient = () => {
             field="estado"
             header="Estado"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -160,13 +153,12 @@ export const ListClient = () => {
             field="responsable"
             header="Responsable"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
@@ -179,13 +171,12 @@ export const ListClient = () => {
             field="honorarios"
             header="Honorarios"
             style={{
-              minWidth: "100px",
               width: "auto",
               height: "50px",
               padding: "5px",
               border: "1px solid gray",
               textAlign: "center",
-              fontSize: "14px",
+              fontSize: "12px",
             }}
             headerStyle={{
               backgroundColor: "GrayText",
