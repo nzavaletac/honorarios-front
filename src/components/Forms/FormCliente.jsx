@@ -19,7 +19,6 @@ const formVacio = {
 };
 
 export const FormCliente = () => {
-  const [val, setVal] = useState();
   const [form, setForm] = useState(formVacio);
   const notify = () =>
     toast.success("Cliente guardado correctamente!", { theme: "dark" });
@@ -71,13 +70,15 @@ export const FormCliente = () => {
         <Column>
           <Form onSubmit={handleSubmit}>
             <div className="container">
-              <input
-                name="ruc"
-                type="number"
-                placeholder="Ruc"
-                className="container__input"
-                onChange={handleChange}
+              <InputMask
+                id="basic"
+                mask="99999999999"
                 value={form.ruc}
+                placeholder="Ruc"
+                onChange={handleChange}
+                name="ruc"
+                type="text"
+                className="container__input"
               />
               <label className="container__label">Ruc</label>
             </div>
@@ -141,7 +142,7 @@ export const FormCliente = () => {
                 id="basic"
                 mask="999-999-999"
                 value={form.telefono}
-                placeholder="999-999-999"
+                placeholder="Teléfono"
                 onChange={handleChange}
                 name="telefono"
                 type="text"
