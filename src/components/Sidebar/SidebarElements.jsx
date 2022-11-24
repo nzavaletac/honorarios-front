@@ -6,7 +6,7 @@ export const Container = styled.div`
   background-color: #2d2e2e;
   height: calc(100vh - 0px);
   width: 15%;
-  display: flex;
+  display: table;
   flex-direction: column;
 `;
 
@@ -49,6 +49,7 @@ export const Subtitle = styled.p`
 
 export const NavLinks = styled(NavLink)`
   text-decoration: none;
+
   &.active {
     & li {
       background-color: #fafafa;

@@ -4,6 +4,7 @@ import { createCliente } from "../../services/ClientesService";
 import { ButtonSubmit, Column, Container, Form } from "./FormClienteElements";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { InputMask } from "primereact/inputmask";
 
 const formVacio = {
   ruc: "",
@@ -69,13 +70,15 @@ export const FormCliente = () => {
         <Column>
           <Form onSubmit={handleSubmit}>
             <div className="container">
-              <input
-                name="ruc"
-                type="number"
-                placeholder="Ruc"
-                className="container__input"
-                onChange={handleChange}
+              <InputMask
+                id="basic"
+                mask="99999999999"
                 value={form.ruc}
+                placeholder="Ruc"
+                onChange={handleChange}
+                name="ruc"
+                type="text"
+                className="container__input"
               />
               <label className="container__label">Ruc</label>
             </div>
@@ -135,13 +138,15 @@ export const FormCliente = () => {
               <label className="container__label">Correo Electrónico</label>
             </div>
             <div className="container">
-              <input
+              <InputMask
+                id="basic"
+                mask="999-999-999"
+                value={form.telefono}
+                placeholder="Teléfono"
+                onChange={handleChange}
                 name="telefono"
                 type="text"
-                placeholder="Teléfono"
                 className="container__input"
-                onChange={handleChange}
-                value={form.telefono}
               />
               <label className="container__label">Teléfono</label>
             </div>
