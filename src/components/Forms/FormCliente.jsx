@@ -4,6 +4,7 @@ import { createCliente } from "../../services/ClientesService";
 import { ButtonSubmit, Column, Container, Form } from "./FormClienteElements";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { InputMask } from "primereact/inputmask";
 
 const formVacio = {
   ruc: "",
@@ -18,6 +19,7 @@ const formVacio = {
 };
 
 export const FormCliente = () => {
+  const [val, setVal] = useState();
   const [form, setForm] = useState(formVacio);
   const notify = () =>
     toast.success("Cliente guardado correctamente!", { theme: "dark" });
@@ -135,13 +137,15 @@ export const FormCliente = () => {
               <label className="container__label">Correo Electrónico</label>
             </div>
             <div className="container">
-              <input
+              <InputMask
+                id="basic"
+                mask="999-999-999"
+                value={form.telefono}
+                placeholder="999-999-999"
+                onChange={handleChange}
                 name="telefono"
                 type="text"
-                placeholder="Teléfono"
                 className="container__input"
-                onChange={handleChange}
-                value={form.telefono}
               />
               <label className="container__label">Teléfono</label>
             </div>
