@@ -23,7 +23,8 @@ export const Button = styled.button`
   line-height: 28px;
   position: relative;
   justify-content: space-around;
-  background-color: #2d2e2e;
+  /* background-color: #2d2e2e; */
+  background-color: #35353f;
   color: #fff;
   margin: 30px 0px 15px 0px;
   padding: 5px 10px;
