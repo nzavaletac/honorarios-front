@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   color: #fafafa;
   background-color: #2d2e2e;
-  height: calc(100vh - 0px);
+  height: calc(100wh - 0px);
   width: 15%;
   display: table;
   flex-direction: column;
